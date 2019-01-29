@@ -36,7 +36,7 @@ composer update
  */
 protected function boot()
 {
-    Gate::define('Zoroaster-cache-card', function ($user) {
+    Gate::define('Zoroaster-backup-tool', function ($user) {
         return in_array($user->email, [
             'karimqaderi1@gmail.com',
         ]);
