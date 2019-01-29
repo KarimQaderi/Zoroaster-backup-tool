@@ -1,0 +1,33 @@
+{
+    "name": "karim-qaderi/zoroaster-backup-tool",
+    "description": "A Zoroaster tool to backup your application.",
+    "keywords": [
+        "laravel",
+        "Zoroaster"
+    ],
+    "authors": [
+        {
+            "name": "Karim Qaderi",
+            "email": "karimqaderi1@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "spatie/laravel-backup": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "KarimQaderi\\ZoroasterBackupTool\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "KarimQaderi\\ZoroasterBackupTool\\BackupToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
