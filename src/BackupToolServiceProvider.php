@@ -14,7 +14,7 @@ class BackupToolServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'ZoroasterBackupTool');
 
         Zoroaster::SidebarMenus([
-            MenuItem::make()->route('ZoroasterBackupTool.index','پشتیبان گیری')->icon('archive')
+            MenuItem::make()->route('ZoroasterBackupTool.index','پشتیبان گیری')->icon('archive')->gate('Zoroaster-backup-tool')
         ]);
 
         $this->app->booted(function () {
