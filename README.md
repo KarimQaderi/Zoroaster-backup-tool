@@ -4,22 +4,8 @@
 
 ## نصب 
 
-فایل composer.json باز کنید و کد زیر رو قرار دهید :
-
-```json
-    "require": {
-        "karim-qaderi/zoroaster-backup-tool": "*"
-    },
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/KarimQaderi/Zoroaster-backup-tool.git"
-        }
-    ],
-```
-
 ```bash
-composer update
+composer require karim-qaderi/zoroaster-backup-tool
 ```
 
 
